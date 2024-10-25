@@ -1,0 +1,14 @@
+*{
+    border-color:crimson;
+    border-style: solid;
+
+}
+.container{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+#titulo{ 
+    color:white;
+
+}
