@@ -572,3 +572,24 @@ main {
     border-color: #8ad669;
     color: #000;
 }
+#searchBox {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #000;
+}
+
+#searchBox:focus {
+    box-shadow: 0 0 0 0.2rem rgba(170, 246, 131, 0.25);
+    border-color: #AAF683;
+}
+
+#searchButton {
+    background-color: #AAF683;
+    border-color: #AAF683;
+    color: #000;
+}
+
+#searchButton:hover {
+    background-color: #8ad669;
+    border-color: #8ad669;
+}
