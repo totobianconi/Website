@@ -243,7 +243,7 @@ function cargarCarrito() {
     }
 }
 
-// Initialize page
+
 document.addEventListener('DOMContentLoaded', () => {
     const albumsGrid = document.getElementById('albumsGrid');
     if (albumsGrid) {
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cargarCarrito();
 });
 
-// Cart toggle functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const cartToggle = document.getElementById('cartToggle');
     const closeCart = document.getElementById('closeCart');
@@ -271,4 +271,49 @@ document.addEventListener('DOMContentLoaded', () => {
             shoppingCart.classList.remove('active');
         });
     }
-}); 
+});
+
+function filtrarAlbums(searchTerm) {
+    searchTerm = searchTerm.toLowerCase();
+    return albums.filter(album => 
+        album.titulo.toLowerCase().includes(searchTerm) ||
+        album.artista.toLowerCase().includes(searchTerm) ||
+        album.anio.toString().includes(searchTerm)
+    );
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const albumsGrid = document.getElementById('albumsGrid');
+    const searchBox = document.getElementById('searchBox');
+    const searchButton = document.getElementById('searchButton');
+
+    
+    if (albumsGrid) {
+        albumsGrid.innerHTML = albums.map(album => crearTarjetaAlbum(album)).join('');
+    }
+
+
+    if (searchBox && searchButton) {
+        const performSearch = () => {
+            const searchTerm = searchBox.value;
+            const filteredAlbums = filtrarAlbums(searchTerm);
+            albumsGrid.innerHTML = filteredAlbums.map(album => crearTarjetaAlbum(album)).join('');
+        };
+
+        
+        searchButton.addEventListener('click', performSearch);
+
+        
+        searchBox.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        
+        searchBox.addEventListener('input', performSearch);
+    }
+
+    cargarCarrito();
+});
