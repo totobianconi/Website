@@ -25,7 +25,7 @@ const albums = [
         precio: 129.99,
         portada: "img/tpab.jpg",
         anio: 2015,
-        descripcion: "A masterpiece of modern hip-hop, blending jazz, funk, and soul with powerful social commentary."
+        descripcion: "Una obra maestra del hip-hop moderno, mezclando jazz, funk y soul con un poderoso comentario social."
     },
     {
         id: 4,
@@ -34,16 +34,16 @@ const albums = [
         precio: 79.99,
         portada: "img/illmatic.jpg",
         anio: 1994,
-        descripcion: "Debut album of Nas, considered one of the greatest hip-hop albums of all time."
+        descripcion: "Álbum debut de Nas, considerado uno de los mejores álbumes de hip-hop de todos los tiempos."
     },
     {
         id: 5,
         titulo: "Alfredo",
-        artista: "Freddie Gibbs",
+        artista: "Freddie Gibbs & The Alchemist",
         precio: 89.99,
         portada: "img/alfredo.jpg",
         anio: 2016,
-        descripcion: "A bold and experimental hip-hop album that pushes genre boundaries with its unique production and Danny's distinctive style."
+        descripcion: "Un álbum de hip-hop audaz y experimental que empuja los límites del género con su producción única y el estilo distintivo de The Alchemist."
     },
     {
         id: 6,
