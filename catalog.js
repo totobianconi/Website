@@ -7,7 +7,7 @@ const albums = [
         precio: 149.99,
         portada: "img/madvillainy.jpg.webp",
         anio: 2004,
-        descripcion: "A groundbreaking collaboration between MF DOOM and Madlib, widely considered one of the greatest hip-hop albums ever made."
+        descripcion:  "Una colaboración revolucionaria entre MF DOOM y Madlib, considerada ampliamente como uno de los mejores álbumes de hip-hop jamás creados."
     }, 
     {
         id: 2,
@@ -16,7 +16,7 @@ const albums = [
         precio: 89.99,
         portada: "img/pray-for-paris.jpg",
         anio: 2020,
-        descripcion: "A luxurious blend of street rap and high art, featuring stellar production and Westside Gunn's unique style."
+        descripcion: "Una lujosa mezcla de rap callejero y arte elevado, con una producción estelar y el estilo único de Westside Gunn."
     },
     {
         id: 3,
